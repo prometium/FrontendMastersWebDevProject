@@ -1,0 +1,86 @@
+:root {
+  --palette-default: #d8d9db;
+  --palette-default-hover: #ebebeb;
+  --palette-default-active: #bbbcbe;
+  --palette-default-contrast-text: #000;
+  --palette-primary: #df974c;
+  --palette-primary-hover: #dfb07e;
+  --palette-primary-active: #dd8d37;
+  --palette-primary-contrast-text: #fff;
+  --palette-background: #000;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html * {
+  box-sizing: inherit;
+}
+
+.calc {
+  margin: auto;
+  width: 400px;
+}
+
+.calc-screen {
+  padding: 0.5em 0.2em;
+  text-align: end;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.5rem;
+  background-color: var(--palette-background);
+  color: #fff;
+}
+
+.calc-buttons {
+  display: grid;
+  grid-template-areas:
+    'clear clear . .'
+    '. . . .'
+    '. . . .'
+    '. . . .'
+    'zero zero zero .';
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 2px;
+  background-color: var(--palette-background);
+}
+
+.calc-button {
+  height: 100px;
+  border-radius: 0;
+  border: none;
+  font-size: 2.5rem;
+  background-color: var(--palette-default);
+  color: var(--palette-default-contrast-text);
+  cursor: pointer;
+}
+
+.calc-button:hover {
+  background-color: var(--palette-default-hover);
+}
+
+.calc-button:active {
+  background-color: var(--palette-default-active);
+}
+
+.calc-button--primary {
+  background-color: var(--palette-primary);
+  color: var(--palette-primary-contrast-text);
+}
+
+.calc-button--primary:hover {
+  background-color: var(--palette-primary-hover);
+}
+
+.calc-button--primary:active {
+  background-color: var(--palette-primary-active);
+}
+
+.calc-button--clear {
+  grid-area: clear;
+}
+
+.calc-button--zero {
+  grid-area: zero;
+}
