@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Masters</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -12,44 +16,49 @@
     </header>
     <section class="row">
       <article class="story col-3">
-        <h1 class="story__title">Student Learns HTML</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic ad in
-          quas alias non! Expedita similique et dolore illum doloremque vel
-          accusantium ut eos tempora sequi, doloribus vitae mollitia praesentium
-          ex ullam? Dolorem labore fugiat neque nostrum porro vero fugit.
+        <h2 class="story__title">Student Learns HTML</h2>
+        <p class="story__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          consectetur, illum ab fugit nemo impedit molestias aliquid nostrum
+          expedita quas corrupti, labore dolorem! Aut, necessitatibus veniam ea
+          deleniti harum voluptatibus asperiores laborum, minima nobis
+          dignissimos laudantium quaerat itaque beatae a.
         </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
-          corrupti, eius odio neque incidunt esse fuga veritatis ipsum, eligendi
-          mollitia, porro quasi provident nisi sit! Doloribus, eligendi nemo, ad
-          laudantium cupiditate aspernatur eveniet asperiores modi praesentium
-          voluptas eos sunt odio.
+        <p class="story__text">
+          Excepturi fuga vitae repudiandae, molestiae voluptas quis pariatur
+          ducimus porro, ea magnam officia facere non quibusdam? Corporis
+          recusandae id, quisquam ex officia velit ipsum commodi incidunt
+          deleniti minima magni, nisi et, dolorum sint nulla reiciendis
+          blanditiis saepe repellendus dicta corrupti.
         </p>
       </article>
       <article class="story col-6">
-        <h1 class="story__title">BREAKING: Puppies Are Adorable</h1>
-        <img src="http://placecorgi.com/500/300" alt="corgi" class="picture" />
-        <p>
+        <h2 class="story__title">BREAKING: Puppies Are Adorable</h2>
+        <img
+          src="http://placecorgi.com/500/300"
+          alt="corgi"
+          class="story__image"
+        />
+        <p class="story__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
           dolores? Illo dolores, rerum iste aut porro doloribus fugit itaque
           voluptas.
         </p>
-        <p>
+        <p class="story__text">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
           incidunt ullam ea magni ipsam perferendis ratione pariatur enim
           repellendus quia?
         </p>
       </article>
       <article class="story col-3">
-        <h1 class="story__title">CSS Is Apparently a Thing</h1>
-        <p>
+        <h2 class="story__title">CSS Is Apparently a Thing</h2>
+        <p class="story__text">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic ad in
           quas alias non! Expedita similique et dolore illum doloremque vel
           accusantium ut eos tempora sequi, doloribus vitae mollitia praesentium
           ex ullam? Dolorem labore fugiat neque nostrum porro vero fugit.
         </p>
-        <p>
+        <p class="story__text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
           corrupti, eius odio neque incidunt esse fuga veritatis ipsum, eligendi
           mollitia, porro quasi provident nisi sit! Doloribus, eligendi nemo, ad
@@ -60,15 +69,15 @@
     </section>
     <section class="row">
       <article class="story col-3">
-        <h1 class="story__title">Boy Likes Turtles</h1>
-        <p>
+        <h2 class="story__title">Boy Likes Turtles</h2>
+        <p class="story__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
           perferendis! Accusamus asperiores quod vitae architecto natus alias
           fugiat aliquam unde sint expedita repellat rerum, obcaecati hic
           placeat recusandae quaerat. Dolores excepturi earum minus magni! Animi
           aperiam eligendi molestias necessitatibus ducimus.
         </p>
-        <p>
+        <p class="story__text">
           Voluptate, ut, cupiditate ducimus vitae blanditiis ex impedit debitis
           est tempora dolores nam sed. Esse nobis ea inventore qui enim quia
           beatae ab commodi laboriosam quam aliquam aut perspiciatis fuga nam
@@ -76,23 +85,25 @@
           laudantium eligendi.
         </p>
       </article>
-      <ul class="story col-9 nav-list">
-        <li class="nav-list__item nav-list__item--politics">
-          <a href="#" class="nav-list__link">Politics</a>
-        </li>
-        <li class="nav-list__item nav-list__item--technology">
-          <a href="#" class="nav-list__link">Technology</a>
-        </li>
-        <li class="nav-list__item nav-list__item--local">
-          <a href="#" class="nav-list__link">Local</a>
-        </li>
-        <li class="nav-list__item nav-list__item--option">
-          <a href="#" class="nav-list__link">Opinion</a>
-        </li>
-        <li class="nav-list__item nav-list__item--sports">
-          <a href="#" class="nav-list__link">Sports</a>
-        </li>
-      </ul>
+      <nav class="story col-9 site-nav">
+        <ul class="nav-list">
+          <li class="nav-list__item nav-list__item--politics">
+            <a href="#" class="nav-list__link">Politics</a>
+          </li>
+          <li class="nav-list__item nav-list__item--technology">
+            <a href="#" class="nav-list__link">Technology</a>
+          </li>
+          <li class="nav-list__item nav-list__item--local">
+            <a href="#" class="nav-list__link">Local</a>
+          </li>
+          <li class="nav-list__item nav-list__item--option">
+            <a href="#" class="nav-list__link">Opinion</a>
+          </li>
+          <li class="nav-list__item nav-list__item--sports">
+            <a href="#" class="nav-list__link">Sports</a>
+          </li>
+        </ul>
+      </nav>
     </section>
   </body>
 </html>
