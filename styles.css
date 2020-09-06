@@ -1,0 +1,95 @@
+html {
+  box-sizing: border-box;
+}
+
+html * {
+  box-sizing: inherit;
+}
+
+.brand {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  border-top: 3px solid #000;
+}
+
+.row:last-child {
+  border-bottom: 3px solid #000;
+}
+
+.story {
+  padding: 8px;
+  border-left: 1px solid #000;
+}
+
+.story:last-child {
+  border-right: 1px solid #000;
+}
+
+.story__title {
+  text-align: center;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.picture {
+  width: 100%;
+  height: auto;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list__item {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.nav-list__item--politics {
+  background-color: hsl(50, 80%, 80%);
+}
+
+.nav-list__item--technology {
+  background-color: hsl(100, 80%, 80%);
+}
+
+.nav-list__item--local {
+  background-color: hsl(150, 80%, 80%);
+}
+
+.nav-list__item--option {
+  background-color: hsl(200, 80%, 80%);
+}
+
+.nav-list__item--sports {
+  background-color: hsl(250, 80%, 80%);
+}
+
+.nav-list__link {
+  padding-left: 24px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #666;
+}
+
+.nav-list__link:hover {
+  text-decoration: underline;
+}
